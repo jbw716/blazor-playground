@@ -4,21 +4,23 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>blazor-playground</title>
+    <title>BlazorPlayground</title>
     <base href="/" />
     <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
     <link href="css/app.css" rel="stylesheet" />
     <link href="manifest.json" rel="manifest" />
     <link rel="apple-touch-icon" sizes="512x512" href="icon-512.png" />
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript" src="/scripts/consoleLog.js"></script>
     <script type="text/javascript" src="/scripts/charting.js"></script>
 </head>
 
 <body>
     <app>
-        <div class="sidebar" style="color: white; height: 100vh; width: 100%; text-align: center; padding-top: 50vh;">
-            <h1 style="display: block; transform: translateY(-50%);">Loading...</h1>
+        <div class="loading-bg">
+            <div class="loading">
+                <h1 class="text">Loading...</h1>
+                <img class="image" src="/assets/img/pokeball.png" />
+            </div>
         </div>
     </app>
 

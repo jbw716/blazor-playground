@@ -1,6 +1,6 @@
 {
-  "name": "blazor-playground",
-  "short_name": "blazor-playground",
+  "name": "BlazorPlayground",
+  "short_name": "BlazorPlayground",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#ffffff",
