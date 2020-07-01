@@ -1,0 +1,43 @@
+﻿<style>
+    .pokeloader-loading {
+        text-align: center;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+        .pokeloader-loading > .pokeloader-text {
+            color: black;
+            padding: 5px;
+            margin: 0;
+        }
+
+        .pokeloader-loading > .pokeloader-image {
+            width: 25px;
+            animation: pokeloader-spinner 2s ease-out infinite;
+            animation-fill-mode: backwards;
+        }
+
+    @@keyframes pokeloader-spinner {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        7.5% {
+            transform: rotate(-45deg);
+        }
+
+        67.5% {
+            transform: rotate(1485deg);
+        }
+
+        75%, 100% {
+            transform: rotate(1440deg);
+        }
+    }
+</style>
+
+<div class="pokeloader-loading">
+    <h4 class="pokeloader-text">Loading...</h4>
+    <img class="pokeloader-image" src="/assets/img/pokeball.png" />
+</div>

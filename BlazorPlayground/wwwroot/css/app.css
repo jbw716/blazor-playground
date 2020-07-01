@@ -1,52 +1,6 @@
 ﻿@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
 
 
-.loading-bg {
-    background-color: dodgerblue;
-    height: 100vh;
-    width: 100%;
-}
-
-.loading {
-    height: 100vh;
-    width: 30vw;
-    margin: auto;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-    .loading > .text {
-        color: white;
-        padding: 25px;
-    }
-
-    .loading > .image {
-        width: 50px;
-        animation: pokespinner 2s ease-out infinite;
-        animation-fill-mode: backwards;
-    }
-
-@keyframes pokespinner {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    7.5% {
-        transform: rotate(-45deg);
-    }
-
-    67.5% {
-        transform: rotate(1485deg);
-    }
-
-    75%, 100% {
-        transform: rotate(1440deg);
-    }
-}
-
-
 html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }

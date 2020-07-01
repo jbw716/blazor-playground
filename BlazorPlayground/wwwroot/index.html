@@ -12,6 +12,54 @@
     <link rel="apple-touch-icon" sizes="512x512" href="icon-512.png" />
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript" src="/scripts/charting.js"></script>
+
+    <style>
+        .loading-bg {
+            background-color: dodgerblue;
+            height: 100vh;
+            width: 100%;
+        }
+
+        .loading {
+            height: 100vh;
+            width: 30vw;
+            margin: auto;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+            .loading > .text {
+                color: white;
+                padding: 25px;
+                margin: 0;
+            }
+
+            .loading > .image {
+                width: 50px;
+                animation: pokespinner 2s ease-out infinite;
+                animation-fill-mode: backwards;
+            }
+
+        @keyframes pokespinner {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            7.5% {
+                transform: rotate(-45deg);
+            }
+
+            67.5% {
+                transform: rotate(1485deg);
+            }
+
+            75%, 100% {
+                transform: rotate(1440deg);
+            }
+        }
+    </style>
 </head>
 
 <body>
